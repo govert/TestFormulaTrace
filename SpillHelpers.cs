@@ -5,10 +5,10 @@ public static class SpillHelpers
 {
     public sealed class SpillInfo
     {
-        public Excel.Range Anchor { get; init; }      // formula cell (top-left)
-        public Excel.Range Range { get; init; }       // spilled result range (or CurrentArray for CSE)
-        public bool IsLegacyArray { get; init; }
-        public bool IsDynamicSpill { get; init; }
+        public Excel.Range Anchor { get; set; }      // formula cell (top-left)
+        public Excel.Range Range { get; set; }       // spilled result range (or CurrentArray for CSE)
+        public bool IsLegacyArray { get; set; }
+        public bool IsDynamicSpill { get; set; }
     }
 
     public static SpillInfo GetSpillInfo(Excel.Range anyCell)

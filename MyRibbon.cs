@@ -11,7 +11,7 @@ namespace TestFormulaTrace
             return RibbonResources.Ribbon;
         }
 
-        public override object? LoadImage(string imageId)
+        public override object LoadImage(string imageId)
         {
             // This will return the image resource with the name specified in the image='xxxx' tag
             return RibbonResources.ResourceManager.GetObject(imageId);
