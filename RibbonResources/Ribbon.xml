@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customUI xmlns='http://schemas.microsoft.com/office/2009/07/customui' loadImage='LoadImage'>
+	<ribbon>
+		<tabs>
+			<tab id='tab1' label='TestFormulaTrace'>
+				<group id='group1' label='My Group'>
+					<button id='button1' label='Copy MXL Formula Values' onAction='CopyMXLValuesPressed'/>
+					<button id='button2' label='Copy MXL Formula and Values' onAction='CopyMXLFormulaPressed'/>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>
